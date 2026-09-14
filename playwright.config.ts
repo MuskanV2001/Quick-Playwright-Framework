@@ -24,7 +24,10 @@ export default defineConfig({
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 2 : 2,
 
-  reporter: 'html',
+  reporter: [
+  ['html'],
+  ['json', { outputFile: 'test-results/results.json' }]
+],
   
   use: {
     baseURL: process.env.BASE_URL!,
