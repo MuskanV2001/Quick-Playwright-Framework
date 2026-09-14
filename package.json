@@ -10,6 +10,7 @@
   },
   "scripts": {
     "test": "npx bddgen && playwright test --headed --project=chromium && playwright show-report",
-    "test1": "npx bddgen && playwright test --headed && playwright show-report"
+    "test1": "npx bddgen && playwright test --headed && playwright show-report",
+    "test-ci": "npx bddgen && playwright test --headed"
   }
 }
