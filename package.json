@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "playwright": "^1.63.0",
+    "playwright-bdd": "^9.2.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^26.5.1"
+  },
+  "scripts": {
+    "test": "npx bddgen && playwright test --headed --project=chromium && playwright show-report",
+    "test1": "npx bddgen && playwright test --headed && playwright show-report"
+  }
+}
